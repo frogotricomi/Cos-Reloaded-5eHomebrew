@@ -507,6 +507,194 @@
             "miscTags": ["MW"],
             "conditionInflict": ["bleeding", "frightened", "deafened", "prone"],
             "savingThrowForced": ["constitution", "wisdom"]
-          }           
+          },
+          {
+            "name": "Muriel Vinshaw",
+            "source": "CoS-Reloaded",
+            "page": 0,
+            "size": ["M"],
+            "type": {
+              "type": "humanoid",
+              "tags": ["shapechanger", "human"]
+            },
+            "alignment": ["C","G"],
+            "ac": [{ "ac": 14, "from": ["leather armor"] }],
+            "hp": { "average": 63, "formula": "14d8" },
+            "speed": { "walk": 30, "fly": 50 },
+            "str": 10,
+            "dex": 16,
+            "con": 11,
+            "int": 13,
+            "wis": 15,
+            "cha": 14,
+            "skill": { "insight": "+4", "perception": "+6" },
+            "passive": 16,
+            "languages": ["Common (can't speak in raven form)"],
+            "cr": "2",
+            "trait": [
+              {
+                "name": "Regeneration",
+                "entries": [
+                  "Muriel regains 10 hit points at the start of her turn if she hasn't taken necrotic damage or bludgeoning, piercing, or slashing damage from a silvered weapon since her last turn."
+                ]
+              },
+              {
+                "name": "Mimic",
+                "entries": [
+                  "Muriel can mimic simple sounds she has heard, such as a whisper, a baby's cry, or animal noises. A creature that hears the sounds can discern they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+                ]
+              },
+              {
+                "name": "Plummet",
+                "entries": [
+                  "If Muriel flies at least 20 ft. straight toward a target while descending at least 5 ft. and then hits that target with a Shortsword attack on the same turn, the target takes an extra 7 ({@damage 2d6}) piercing damage and must succeed on a {@dc 12} Strength saving throw or be {@condition prone}."
+                ]
+              }
+            ],
+            "action": [
+              {
+                "name": "Multiattack",
+                "entries": [
+                  "Muriel makes two weapon attacks, one of which can be with her Hand Crossbow."
+                ]
+              },
+              {
+                "name": "Shortsword (Humanoid or Hybrid Form Only)",
+                "entries": [
+                  "{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+                ]
+              },
+              {
+                "name": "Hand Crossbow (Humanoid or Hybrid Form Only)",
+                "entries": [
+                  "{@atk rw} {@hit +5} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 3}) piercing damage."
+                ]
+              },
+              {
+                "name": "Beak (Raven or Hybrid Form Only)",
+                "entries": [
+                  "{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}1 piercing damage in raven form, or 5 ({@damage 1d4 + 3}) piercing damage in hybrid form. If the target is a humanoid, it must succeed on a {@dc 10} Constitution saving throw or be cursed with wereraven lycanthropy."
+                ]
+              }
+            ],
+            "bonus": [
+              {
+                "name": "Shapechange",
+                "entries": [
+                  "Muriel magically polymorphs into a raven‑humanoid hybrid or a raven, or back into her human form. Her statistics other than size are the same in each form, and equipment doesn't transform. She reverts to human form if she dies."
+                ]
+              }
+            ],
+            "reaction": [
+              {
+                "name": "Interpose",
+                "entries": [
+                  "When a creature Muriel can see hits another target within 5 ft. of her, she can take the damage instead."
+                ]
+              }
+            ],
+            "traitTags": ["Regeneration"],
+            "languageTags": ["C"],
+            "damageTags": ["P"],
+            "miscTags": ["MW", "RW"],
+            "conditionInflict": ["prone"],
+            "savingThrowForced": ["strength", "constitution"]
+          },
+          {
+            "name": "Werewolf",
+            "source": "CoS-Reloaded",
+            "page": 0,
+            "size": ["M"],
+            "type": {
+              "type": "humanoid",
+              "tags": ["shapechanger", "human"]
+            },
+            "alignment": ["C","E"],
+            "ac": [
+              { "ac": 11, "condition": "in humanoid form" },
+              { "ac": 12, "from": ["natural armor"], "condition": "in wolf or hybrid form" }
+            ],
+            "hp": { "average": 84, "formula": "13d8 + 26" },
+            "speed": { "walk": 30},
+            "str": 16,
+            "dex": 13,
+            "con": 14,
+            "int": 10,
+            "wis": 11,
+            "cha": 10,
+            "save": { "str": "+5" },
+            "skill": { "perception": "+4", "stealth": "+3" },
+            "senses": ["darkvision 60 ft."],
+            "passive": 14,
+            "languages": ["Common (can't speak in wolf form)"],
+            "cr": "3",
+            "trait": [
+              {
+                "name": "Keen Hearing and Smell",
+                "entries": [
+                  "The werewolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+                ]
+              },
+              {
+                "name": "Uncanny Speed",
+                "entries": [ "The werewolf has a walking speed of 40 ft. in wolf form." ]
+              },
+              {
+                "name": "Pack Tactics",
+                "entries": [
+                  "The werewolf has advantage on an attack roll against a creature if at least one of the werewolf's allies is within 5 ft. of the creature and the ally isn't {@condition incapacitated}."
+                ]
+              },
+              {
+                "name": "Regeneration",
+                "entries": [
+                  "The werewolf regains 10 hit points at the start of its turn. If it takes necrotic damage or bludgeoning, piercing, or slashing damage from a silvered weapon, this trait doesn’t function at the start of its next turn. The werewolf dies only if it starts its turn with 0 hit points and doesn’t regenerate."
+                ]
+              }
+            ],
+            "action": [
+              {
+                "name": "Multiattack",
+                "entries": [
+                  "The werewolf makes two attacks: two with its Spear (humanoid form) or one with its Bite and one with its Claws (wolf or hybrid form)."
+                ]
+              },
+              {
+                "name": "Bite (Wolf or Hybrid Form Only)",
+                "entries": [
+                  "{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage. Instead of dealing damage, the werewolf can grapple the target (escape {@dc 11}). If the target is a humanoid, it must succeed on a {@dc 13} Constitution saving throw or be cursed with werewolf lycanthropy."
+                ]
+              },
+              {
+                "name": "Claws (Wolf or Hybrid Form Only)",
+                "entries": [
+                  "{@atk mw} {@hit +5} to hit, reach 5 ft., one creature. {@h}8 ({@damage 2d4 + 3}) slashing damage. The target must succeed on a {@dc 13} Strength saving throw or be {@condition prone}."
+                ]
+              },
+              {
+                "name": "Spear (Humanoid Form Only)",
+                "entries": [
+                  "{@atk mw,rw} {@hit +5} to hit, reach 5 ft. or range 20/60 ft., one creature. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 6 ({@damage 1d8 + 3}) if wielded two‑handed in melee."
+                ]
+              }
+            ],
+            "bonus": [
+              {
+                "name": "Shapechange",
+                "entries": [
+                  "The werewolf polymorphs into a wolf‑humanoid hybrid or a wolf, or back into its true form (humanoid). Its statistics other than AC are the same in each form. Equipment melds into the new form. It reverts to its true form if it dies."
+                ]
+              }
+            ],
+            "traitTags": ["Pack Tactics", "Regeneration"],
+            "senseTags": ["D"],
+            "languageTags": ["C"],
+            "damageTags": ["P", "S"],
+            "miscTags": ["MW", "RW"],
+            "conditionInflict": ["grappled", "prone"],
+            "savingThrowForced": ["strength", "constitution"]
+          }
+          
+                    
     ]
 }
