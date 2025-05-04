@@ -238,6 +238,275 @@
             "miscTags": ["MW","RW"],
             "conditionInflict": ["blinded","deafened","poisoned","prone"],
             "savingThrowForced": ["strength","constitution","dexterity"]
-          }          
+          },
+          {
+            "name": "Rahadin, Castle Chamberlain",
+            "source": "CoS-Reloaded",
+            "page": 0,
+            "size": ["M"],
+            "type": "humanoid (elf)",
+            "alignment": ["L","E"],
+            "ac": [{ "ac": 18, "from": ["studded leather"] }],
+            "hp": { "average": 180, "formula": "24d8 + 72" },
+            "speed": { "walk": 35 },
+            "str": 14,
+            "dex": 22,
+            "con": 17,
+            "int": 15,
+            "wis": 16,
+            "cha": 18,
+            "save": { "dex": "+11", "wis": "+8" },
+            "skill": {
+              "acrobatics": "+11",
+              "deception": "+9",
+              "insight": "+8",
+              "intimidation": "+14",
+              "perception": "+13",
+              "stealth": "+16"
+            },
+            "senses": ["darkvision 60 ft."],
+            "passive": 23,
+            "languages": ["Common", "Elvish"],
+            "cr": "14",
+            "trait": [
+              {
+                "name": "Screams of the Dead",
+                "entries": [
+                  "Any creature within 10 feet of Rahadin that isn’t protected by a {@spell mind blank} spell hears in its mind the screams of the thousands he has killed."
+                ]
+              },
+              {
+                "name": "Fey Ancestry",
+                "entries": [
+                  "Rahadin has advantage on saving throws against being {@condition charmed}, and magic can’t put him to sleep."
+                ]
+              },
+              {
+                "name": "Indomitable",
+                "entries": [
+                  "If Rahadin fails a saving throw, he can choose to succeed instead. If he does so, he is hindered until the end of his next turn. While hindered, he is slowed, can use one fewer reaction each round, and can’t use his Multiattack."
+                ]
+              },
+              {
+                "name": "Innate Spellcasting",
+                "entries": [
+                  "Rahadin’s innate spellcasting ability is Intelligence (spell save {@dc 15}). He can innately cast the following spells, requiring no components:",
+                  "{@spell phantom steed} 3/day, {@spell nondetection} 1/day"
+                ]
+              },
+              {
+                "name": "Mask of the Wild",
+                "entries": [
+                  "Rahadin can attempt to hide even when he is only lightly obscured by foliage, heavy rain, falling snow, mist, or other natural phenomena."
+                ]
+              },
+              {
+                "name": "Murderous Instinct",
+                "entries": [
+                  "When Rahadin drops to 0 hit points, he stows his saber and draws his twin scimitars, Thorn and Chain. His statistics are then replaced by those of his second form. His initiative count doesn’t change, excess damage doesn’t carry over, and he doesn’t retain any conditions."
+                ]
+              }
+            ],
+            "action": [
+              {
+                "name": "Multiattack",
+                "entries": [
+                  "Rahadin makes two attacks."
+                ]
+              },
+              {
+                "name": "Saber",
+                "entries": [
+                  "{@atk mw} {@hit +11} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 6}) slashing damage, and Rahadin can push the target up to 5 ft. Away. Instead of pushing, he can force the target to succeed on a {@dc 15} Strength saving throw or be {@condition prone}."
+                ]
+              },
+              {
+                "name": "Poisoned Dart",
+                "entries": [
+                  "{@atk rw} {@hit +11} to hit, range 20/60 ft., one target. {@h}14 ({@damage 1d4 + 6}) piercing plus 2d4 poison damage. The target must succeed on a {@dc 15} Constitution saving throw or be {@condition poisoned} until the start of Rahadin’s next turn."
+                ]
+              }
+            ],
+            "bonus": [
+              {
+                "name": "Wind Strike",
+                "entries": [
+                  "Rahadin moves up to his speed in a straight line toward a space he can see, passing through creatures without provoking opportunity attacks. Each creature within 5 ft. of his path must make a {@dc 19} Dexterity saving throw, taking 7 ({@damage 2d6}) slashing damage on a failed save, or half as much on a success."
+                ]
+              },
+              {
+                "name": "Whirling Blades",
+                "entries": [
+                  "Each creature within 10 ft. of Rahadin must make a {@dc 19} Dexterity saving throw, taking 7 ({@damage 2d6}) slashing damage on a failed save, or half as much on a success."
+                ]
+              }
+            ],
+            "reaction": [
+              {
+                "name": "Multiple Reactions",
+                "entries": [
+                  "Rahadin can take up to three reactions per round, but no more than one per turn. If he would lose his reactions and isn’t {@condition incapacitated}, he instead loses one reaction."
+                ]
+              },
+              {
+                "name": "Punishing Strike",
+                "entries": [
+                  "When Rahadin is hit by a melee or ranged attack, he moves up to his speed toward the attacker and makes a Saber attack. This movement doesn’t provoke opportunity attacks."
+                ]
+              },
+              {
+                "name": "Disarm",
+                "entries": [
+                  "When an enemy misses Rahadin with a melee weapon attack, he forces that enemy to make a {@dc 19} Strength saving throw (with advantage if the enemy grips the weapon two‑handed). On a failure, the enemy drops the weapon, which lands 10 ft. away."
+                ]
+              },
+              {
+                "name": "Misty Step (1/round)",
+                "entries": [
+                  "When an enemy misses Rahadin with an attack or deals damage to him, he casts {@spell misty step} and can immediately take the Hide action. He doesn’t need to see his destination when casting the spell in this way."
+                ]
+              },
+              {
+                "name": "Psychic Scream (1/day)",
+                "entries": [
+                  "When Rahadin is reduced to 0 hit points, each creature within 60 ft. of him must make a {@dc 17} Wisdom saving throw, taking 11 ({@damage 2d10}) psychic damage on a failed save, or half as much on a success. A creature that fails by 5 or more is {@condition stunned} until the start of Rahadin’s next turn."
+                ]
+              }
+            ],
+            "traitTags": [
+              "Fey Ancestry"
+            ],
+            "senseTags": ["D"],
+            "languageTags": ["C", "E"],
+            "damageTags": ["S", "P", "I", "Y"],
+            "miscTags": ["MW", "RW"],
+            "conditionInflict": ["poisoned", "prone", "stunned"],
+            "savingThrowForced": ["strength", "dexterity", "constitution", "wisdom"]
+          },
+          {
+            "name": "Rahadin, Kinslayer",
+            "source": "CoS-Reloaded",
+            "page": 0,
+            "size": ["M"],
+            "type": "humanoid (elf)",
+            "alignment": ["L","E"],
+            "ac": [{ "ac": 18, "from": ["studded leather"] }],
+            "hp": { "average": 180, "formula": "24d8 + 72" },
+            "speed": { "walk": 35 },
+            "str": 14,
+            "dex": 22,
+            "con": 17,
+            "int": 15,
+            "wis": 16,
+            "cha": 18,
+            "save": { "dex": "+11", "wis": "+8" },
+            "skill": {
+              "acrobatics": "+11",
+              "deception": "+9",
+              "insight": "+8",
+              "intimidation": "+14",
+              "perception": "+13",
+              "stealth": "+16"
+            },
+            "senses": ["darkvision 60 ft."],
+            "passive": 23,
+            "languages": ["Common", "Elvish"],
+            "cr": "15",
+            "trait": [
+              {
+                "name": "Screams of the Dead",
+                "entries": [
+                  "Any creature within 10 feet of Rahadin that isn’t protected by a {@spell mind blank} spell hears in its mind the screams of the thousands of people he has killed."
+                ]
+              },
+              {
+                "name": "Fey Ancestry",
+                "entries": [
+                  "Rahadin has advantage on saving throws against being {@condition charmed}, and magic can’t put him to sleep."
+                ]
+              },
+              {
+                "name": "Indomitable",
+                "entries": [
+                  "If Rahadin fails a saving throw, he can choose to succeed instead. If he does so, he is hindered until the end of his next turn. While hindered, he is slowed, can use one fewer reaction each round, and can’t use his Multiattack."
+                ]
+              },
+              {
+                "name": "Mask of the Wild",
+                "entries": [
+                  "Rahadin can attempt to hide even when he is only lightly obscured by foliage, heavy rain, falling snow, mist, or other natural phenomena."
+                ]
+              }
+            ],
+            "action": [
+              {
+                "name": "Multiattack",
+                "entries": [
+                  "Rahadin makes three attacks with Thorn and/or Chain, and can replace one attack with Haunt."
+                ]
+              },
+              {
+                "name": "Thorn",
+                "entries": [
+                  "{@atk mw} {@hit +11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) slashing damage. The target must succeed on a {@dc 19} Constitution saving throw or bleed for 1 minute. A bleeding creature repeats the save at the start of each of its turns, taking {@damage 1d6} slashing damage on a failure. The bleeding ends early on a successful save or if the creature receives magical healing."
+                ]
+              },
+              {
+                "name": "Chain",
+                "entries": [
+                  "{@atk mw} {@hit +11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) slashing damage. The target must succeed on a {@dc 19} Constitution saving throw or have its speed reduced to 0 until the end of its next turn. If it fails by 5 or more, it also falls {@condition prone}."
+                ]
+              },
+              {
+                "name": "Haunt",
+                "entries": [
+                  "Rahadin targets one creature he can see within 30 ft. The target must make a {@dc 17} Wisdom saving throw or take 7 ({@damage 2d6}) psychic damage and become {@condition frightened} and {@condition deafened} by shrieking souls until the start of Rahadin’s next turn."
+                ]
+              }
+            ],
+            "bonus": [
+              {
+                "name": "Deathly Choir",
+                "entries": [
+                  "Each creature within 10 ft. of Rahadin that isn’t protected by a {@spell mind blank} spell must make a {@dc 17} Wisdom saving throw, taking 9 ({@damage 2d8}) psychic damage on a failed save, or half as much on a success. A creature that fails by 5 or more is also {@condition frightened} until the start of Rahadin’s next turn."
+                ]
+              },
+              {
+                "name": "Swift Step",
+                "entries": [
+                  "Rahadin takes the Dash or Disengage action."
+                ]
+              }
+            ],
+            "reaction": [
+              {
+                "name": "Multiple Reactions",
+                "entries": [
+                  "Rahadin can take up to three reactions per round, but no more than one per turn. If he would lose his reactions and isn’t {@condition incapacitated}, he instead loses one reaction."
+                ]
+              },
+              {
+                "name": "Parry",
+                "entries": [
+                  "Rahadin adds +5 to his AC against one attack that would hit him, to the result of a failed Dexterity saving throw, or nullifies {@spell magic missile}. If he causes a melee attack to miss, he may immediately spend another available reaction to use Riposte."
+                ]
+              },
+              {
+                "name": "Riposte",
+                "entries": [
+                  "When an enemy misses Rahadin with a melee attack, he moves up to his speed to a space within 5 ft. of the attacker (no opportunity attacks) and makes a Thorn or Chain attack against that creature with advantage."
+                ]
+              }
+            ],
+            "traitTags": [
+              "Fey Ancestry"
+            ],
+            "senseTags": ["D"],
+            "languageTags": ["C", "E"],
+            "damageTags": ["S", "Y"],
+            "miscTags": ["MW"],
+            "conditionInflict": ["bleeding", "frightened", "deafened", "prone"],
+            "savingThrowForced": ["constitution", "wisdom"]
+          }           
     ]
 }
