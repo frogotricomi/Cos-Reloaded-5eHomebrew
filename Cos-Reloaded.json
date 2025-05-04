@@ -1,0 +1,243 @@
+{
+    "_meta": {
+    "sources": [
+        {
+            "json": "CoS-Reloaded",
+            "abbreviation": "CoS-Re",
+            "full": "Curse of Strahd Reloaded",
+            "authors": [
+                "lunarshards"
+            ],
+            "version": "1.0",
+            "url": "dummyurl.github.io"
+        }
+    ],
+    "edition": "classic",
+    "dateAdded": 1746381214,
+    "dateLastModified": 1746381214
+    },
+    "monster": [
+        {
+            "name": "Flesh Mound",
+            "source": "CoS-Reloaded",
+            "page": 0,
+            "size": ["L"],
+            "type": "undead",
+            "alignment": ["E"],
+            "ac": [{ "ac": 15, "from": ["natural armor"] }],
+            "hp": { "average": 93, "formula": "11d10 + 33" },
+            "speed": { "walk": 20 },
+            "str": 16,
+            "dex": 8,
+            "con": 16,
+            "int": 3,
+            "wis": 10,
+            "cha": 5,
+            "senses": ["blindsight 60 ft."],
+            "passive": 10,
+            "conditionImmune": ["blinded","deafened","exhaustion","grappled","prone"],
+            "languages": ["understands Common but can't speak it"],
+            "cr": "4",
+            "trait": [
+              {
+                "name": "Heavy Sleeper",
+                "entries": [
+                  "If either of the mound’s forms has been unconscious within the past minute, it can’t use its {@atk mw slam} attack more than once per turn."
+                ]
+              },
+              {
+                "name": "Oozing Body",
+                "entries": [
+                  "The flesh mound can move through the space of another creature and through any opening large enough for a Medium creature. It can't end its turn inside another creature’s space and provokes opportunity attacks normally."
+                ]
+              },
+              {
+                "name": "Instinctual Defense",
+                "entries": [
+                  "When the mound drops to 0 hit points, each creature it currently has engulfed is expelled prone in an unoccupied space within 5 feet of it. The mound’s statistics are then replaced by those of its second form, {@creature Walter, the Graveborn|CoS-Reloaded}. Its initiative count doesn’t change, and excess damage doesn’t carry over, though it keeps any conditions it had."
+                ]
+              }
+            ],
+            "action": [
+              {
+                "name": "Multiattack",
+                "entries": [
+                  "The flesh mound makes two attacks, and can replace one of them with Engulf. If its Heavy Sleeper feature is active, it can’t use its slam more than once and can’t use Engulf on the same turn it uses slam."
+                ]
+              },
+              {
+                "name": "Slam",
+                "entries": [
+                  "{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 3}) bludgeoning damage, or 10 ({@damage 2d6 + 3}) if Heavy Sleeper is active. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 13})."
+                ]
+              },
+              {
+                "name": "Bone Splinters",
+                "entries": [
+                  "{@atk rw} {@hit +5} to hit, range 20/60 ft., up to two targets within 5 ft. of each other. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+                ]
+              },
+              {
+                "name": "Engulf",
+                "entries": [
+                  "The flesh mound attempts to engulf one Medium or smaller creature it is grappling. The target must make a {@dc 13} Strength saving throw. On a failure, it is blinded, restrained, and unable to breathe, and must succeed on a {@dc 13} Constitution save at the start of each of its turns or take 8 ({@damage 2d4 + 3}) bludgeoning damage. An engulfed creature can repeat the Strength save at the end of each of its turns, escaping on a success."
+                ]
+              }
+            ],
+            "bonus": [
+              {
+                "name": "Rupture",
+                "entries": [
+                  "The mound expels a pustule at a point within 20 ft. Each creature within 5 ft. of that point must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the start of the mound’s next turn."
+                ]
+              },
+              {
+                "name": "Quake",
+                "entries": [
+                  "The mound slams the ground. Each creature within 10 ft. must succeed on a {@dc 13} Strength saving throw or fall {@condition prone}."
+                ]
+              }
+            ],
+            "reaction": [
+              {
+                "name": "Multiple Reactions",
+                "entries": [
+                  "The flesh mound can take up to three reactions per round, but no more than one per turn. If it would lose its reactions and isn’t {@condition incapacitated}, it instead loses one reaction."
+                ]
+              },
+              {
+                "name": "Squelch",
+                "entries": [
+                  "When it takes melee damage, the mound attempts to grapple the attacker with Slam."
+                ]
+              },
+              {
+                "name": "Roll",
+                "entries": [
+                  "When it takes ranged damage or a harmful spell, the mound moves up to its speed directly toward or away from the attacker (no opportunity attacks). If it moves toward the attacker, it may then attempt to shove them."
+                ]
+              }
+            ],
+            "senseTags": ["B"],
+            "languageTags": ["CS","C"],
+            "damageTags": ["B","P"],
+            "miscTags": ["MW","RW"],
+            "conditionInflict": ["grappled","poisoned","prone","blinded","deafened"],
+            "savingThrowForced": ["strength","constitution","dexterity"]
+          },
+          {
+            "name": "Walter, the Graveborn",
+            "source": "CoS-Reloaded",
+            "page": 0,
+            "size": ["L"],
+            "type": "undead",
+            "alignment": ["E"],
+            "ac": [{ "ac": 15, "from": ["natural armor"] }],
+            "hp": { "average": 93, "formula": "11d10 + 33" },
+            "speed": { "walk": 20 },
+            "str": 16,
+            "dex": 8,
+            "con": 16,
+            "int": 3,
+            "wis": 10,
+            "cha": 10,
+            "senses": ["blindsight 60 ft."],
+            "passive": 10,
+            "conditionImmune": ["blinded","deafened","exhaustion","grappled","prone"],
+            "languages": ["understands Common but can't speak it"],
+            "cr": "4",
+            "trait": [
+              {
+                "name": "Heavy Sleeper",
+                "entries": [
+                  "If either of the mound’s forms has been unconscious within the past minute, it can’t use its {@atk mw tentacle} attack more than once per turn."
+                ]
+              },
+              {
+                "name": "Oozing Body",
+                "entries": [
+                  "The flesh mound can move through the space of another creature and through any opening large enough for a Medium creature. It can't end its turn inside another creature’s space and provokes opportunity attacks normally."
+                ]
+              },
+              {
+                "name": "Innocent Heart",
+                "entries": [
+                  "The mound’s center conceals its heart: the infant corpse of Walter Durst encased in a rib cage (AC 15, same ability scores as the mound). Whenever Walter’s corpse takes damage, the mound takes twice that amount."
+                ]
+              },
+              {
+                "name": "Mother’s Lullaby",
+                "entries": [
+                  "A creature that uses its action to hum or play <i>Waltz for Klara</i> and succeeds on a {@dc 10} Charisma (Performance) check causes the mound to expose its heart; until the start of that creature’s next turn, the mound can’t use its Withdraw reaction."
+                ]
+              }
+            ],
+            "action": [
+              {
+                "name": "Multiattack",
+                "entries": [
+                  "The mound makes three attacks, or two if Heavy Sleeper is active."
+                ]
+              },
+              {
+                "name": "Tentacle",
+                "entries": [
+                  "{@atk mw} {@hit +5} to hit, reach 15 ft., one target. {@h}14 ({@damage 2d10 + 3}) bludgeoning damage, or 7 ({@damage 1d8 + 3}) if Heavy Sleeper is active. The target must succeed on a {@dc 13} Strength saving throw or be pulled up to 15 ft. toward the mound."
+                ]
+              },
+              {
+                "name": "Bite",
+                "entries": [
+                  "{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+                ]
+              }
+            ],
+            "bonus": [
+              {
+                "name": "Gore Spray",
+                "entries": [
+                  "The mound spews gore in a 15‑foot cone. Each creature in that area must make a {@dc 13} Dexterity saving throw, taking 7 ({@damage 2d6}) necrotic damage and becoming {@condition blinded} until the end of the mound’s next turn on a failure, or half damage and no blindness on a success. Using this bonus action exposes the mound’s heart."
+                ]
+              },
+              {
+                "name": "Wail",
+                "entries": [
+                  "Walter’s corpse emits a shriek. Each creature that can hear it within 30 ft. must succeed on a {@dc 10} Constitution saving throw or take 2 ({@damage 1d4}) psychic damage and be {@condition deafened} until the end of the mound’s next turn. Using this bonus action exposes the heart."
+                ]
+              }
+            ],
+            "reaction": [
+              {
+                "name": "Multiple Reactions",
+                "entries": [
+                  "The mound can take up to three reactions per round, but no more than one per turn. If it would lose its reactions and isn’t {@condition incapacitated}, it instead loses one reaction."
+                ]
+              },
+              {
+                "name": "Withdraw",
+                "entries": [
+                  "When an attack or spell targets or damages its exposed heart, the mound withdraws the heart into its body, protecting it from further harm until it is exposed again."
+                ]
+              },
+              {
+                "name": "Lash Out",
+                "entries": [
+                  "When it takes melee damage, the mound lashes out with a tentacle. The attacker must make a {@dc 13} Dexterity saving throw or be pushed 10 ft. away; on a failure by 5 or more, the attacker also falls {@condition prone}."
+                ]
+              },
+              {
+                "name": "Roll",
+                "entries": [
+                  "When it takes ranged damage or a harmful spell, the mound moves up to its speed directly toward or away from the attacker (no opportunity attacks). If it moves toward the attacker, it may then attempt to shove them."
+                ]
+              }
+            ],
+            "senseTags": ["B"],
+            "languageTags": ["CS","C"],
+            "damageTags": ["B","P","N","Y"],
+            "miscTags": ["MW","RW"],
+            "conditionInflict": ["blinded","deafened","poisoned","prone"],
+            "savingThrowForced": ["strength","constitution","dexterity"]
+          }          
+    ]
+}
